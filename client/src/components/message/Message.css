@@ -1,0 +1,20 @@
+.message {
+  display: flex;
+  color: #ff0101;
+  margin: 5px 15px;
+}
+
+.message__myText {
+  color: #0101ff;
+}
+
+.message > h1 {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.message > h2 {
+  color: #0e0e0e;
+  font-weight: 400;
+  font-size: 15px;
+}

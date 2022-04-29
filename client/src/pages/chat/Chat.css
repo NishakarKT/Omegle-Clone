@@ -1,0 +1,196 @@
+.chat {
+  flex: 1;
+  display: flex;
+  border-radius: 10px;
+  margin: 15px;
+  overflow: hidden;
+}
+
+.chat__videos {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__videos > video {
+  flex: 0.5;
+  width: 100%;
+  object-fit: cover;
+  margin: 1px 0;
+  height: 100px;
+}
+
+.chat__messages {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 10px;
+  margin: 0 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.chat__messagesBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.chat__messagesBox::-webkit-scrollbar {
+  display: none;
+}
+
+.chat__messages > p,
+.chat__messagesBox > p {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  color: #636363;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.chat__messages > p > img {
+  object-fit: contain;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.chat__newBtn > .MuiButton-root {
+  color: white;
+  background: linear-gradient(#80c0ff, #0380ff);
+  font-size: 18px;
+  text-transform: none;
+  padding: 10px 30px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.chat__optionsBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__optionsBox > p {
+  margin-left: 15px;
+  color: #636363;
+  font-weight: bold;
+}
+
+.chat__options {
+  display: flex;
+  align-items: center;
+}
+
+.chat__options > p {
+  font-weight: bold;
+  margin-left: -10px;
+}
+
+.chat__link {
+  color: #3030f1;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.chat__foot {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat__footNewBtn > .MuiButton-root {
+  color: white;
+  font-size: 18px;
+  background: linear-gradient(#80c0ff, #0380ff);
+  text-transform: none;
+  padding: 20px 35px;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+}
+
+.chat__controlBtn > .MuiButton-root {
+  background-color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: none;
+  padding: 20px 35px;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+}
+
+.chat__foot > textarea {
+  flex: 1;
+  border: 1px solid #cccccc;
+  background-color: white;
+  font-family: "roboto";
+  outline: none;
+  min-height: 71px;
+  max-height: 71px;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .chat__newBtn > .MuiButton-root {
+    padding: 10px 25px;
+  }
+  .chat__footNewBtn > .MuiButton-root {
+    padding: 20px 25px;
+  }
+
+  .chat__controlBtn > .MuiButton-root {
+    padding: 20px 25px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .chat__newBtn > .MuiButton-root {
+    padding: 10px 20px;
+  }
+  .chat__footNewBtn > .MuiButton-root {
+    padding: 10px 20px;
+  }
+
+  .chat__controlBtn > .MuiButton-root {
+    padding: 10px 20px;
+  }
+  .chat__foot > textarea {
+    min-height: 53px;
+    max-height: 53px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .chat {
+    flex-direction: column;
+  }
+  .chat__videos {
+    margin-bottom: 5px;
+    flex-direction: row;
+  }
+  .chat__newBtn > .MuiButton-root {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .chat__footNewBtn > .MuiButton-root {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .chat__controlBtn > .MuiButton-root {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .chat__foot > textarea {
+    min-height: 37px;
+    max-height: 37px;
+  }
+}
